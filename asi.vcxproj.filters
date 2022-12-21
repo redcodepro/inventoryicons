@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="d3drender.h" />
+    <ClInclude Include="sampapi\CTextDraw.h">
+      <Filter>sampapi</Filter>
+    </ClInclude>
+    <ClInclude Include="sampapi\CTextDrawPool.h">
+      <Filter>sampapi</Filter>
+    </ClInclude>
+    <ClInclude Include="sampapi\CVector.h">
+      <Filter>sampapi</Filter>
+    </ClInclude>
+    <ClInclude Include="sampapi\common.h">
+      <Filter>sampapi</Filter>
+    </ClInclude>
+    <ClInclude Include="sampapi\CInput.h">
+      <Filter>sampapi</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\MinHook.h">
+      <Filter>minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="sampapi\CTextDrawSelection.h">
+      <Filter>sampapi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="d3drender.cpp" />
+    <ClCompile Include="sampapi\CVector.cpp">
+      <Filter>sampapi</Filter>
+    </ClCompile>
+    <ClCompile Include="sampapi\common.cpp">
+      <Filter>sampapi</Filter>
+    </ClCompile>
+    <ClCompile Include="ii_helper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="sampapi">
+      <UniqueIdentifier>{ee983d05-5746-4421-b15e-a397250bea8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="minhook">
+      <UniqueIdentifier>{a835d011-c27a-4244-a2e0-70132e0a44d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="minhook\MinHook.lib">
+      <Filter>minhook</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
